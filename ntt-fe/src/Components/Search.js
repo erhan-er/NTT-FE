@@ -15,6 +15,7 @@ import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import '../Style/Search.css';
+import { Menu } from '@mui/material';
 
 const Search = () => {
     const [category, setCategory] = React.useState('');
@@ -25,11 +26,10 @@ const Search = () => {
 
     return (
         <Box className="search">
-            <Box sx={{ minWidth: 120 }} className="search-bar">
+            <Box sx={{ minWidth: 120, }} className="search-bar">
+            
                     <input placeholder='Search...' className="search-field"></input>
                     <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
                         value={category}
                         label="Category"
                         className="category-selector"
@@ -42,12 +42,11 @@ const Search = () => {
                             backgroundColor: "#F4F5F6",
                             border: "none",
                             fontSize: "14px",
+                            color:  "black",
                             '@media (max-width: 480px)': {
                                 display: "none",
                             },
-                            '& .MuiSelect-select': {
-                                
-                            }
+                            
                         }}
                     >
                         <MenuItem value={"Data"}>Data</MenuItem>

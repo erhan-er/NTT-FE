@@ -48,6 +48,19 @@
 
 @media screen and (max-width: 768px) {
     .Menu {
+        width: 720px;
+    }
+    .menu-img {
+        display: none;
+    }
+    .menu-list {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Menu {
         display: none;
     }
 }

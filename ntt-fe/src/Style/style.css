@@ -2,17 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.header {
-    background: yellow;
-    width: 100%;
-    height: 100px;
-}
-
-.body {
-    background: red;
-    flex: 1;
-    height: 50px;
+    width: 100%,
 }
 

@@ -15,8 +15,10 @@ const BigMenu = ({ bigMenu, setBigMenu }) => {
     useEffect(() => {
     }, [bigMenu]);
 
+    var x = window.matchMedia("(max-width: 768px)");
+
     return (
-        <Box className="Menu" sx={{ display: bigMenu ? "flex" : "none" }} /*onMouseOut={handleCloseMenu}*/>
+        <Box className="Menu" sx={{ display: bigMenu ? "flex" : "none"}} /*onMouseOut={handleCloseMenu}*/>
             <Box className="menu-list">
                 <Box>
                     <p className="menu-list-title">Header</p>

@@ -30,8 +30,6 @@
     gap: 12px;
     width: 100%;
     margin-bottom: 48px;
-    
-    
 }
 
 .body-title-text {
@@ -51,14 +49,12 @@
     padding-right: 120px;
 }
 
-.body-title-liked {}
-
 .pagination-body {
     display: none;
 }
 @media screen and (max-width: 768px) {
     .body-root {
-        width: 768px;
+        width: 100%;
     }
 
     .body-title-text {
@@ -72,7 +68,7 @@
 
 @media screen and (max-width: 480px) {
     .body-root {
-        width: 480px;
+        width: 100%;
     }
 
     .body-title-text {

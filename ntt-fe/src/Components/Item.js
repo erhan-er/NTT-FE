@@ -25,15 +25,15 @@ const Item = ({ item }) => {
         if (x.matches && y.matches) {
             return (
                 <p className="item-description-text">
-                    {item.description.length > 50 ? item.description.substring(0, 50) + "..." : item.description}
-                    {item.description.length > 50 ? <span className="item-description-see-more" onClick={() => setSeeMore(!seeMore)}>Daha Fazla Göster</span> : null}
+                    {item.description.length > 25 ? item.description.substring(0, 25) + "..." : item.description}
+                    {item.description.length > 25 ? <span className="item-description-see-more" onClick={() => setSeeMore(!seeMore)}>Daha Fazla Göster</span> : null}
                 </p>
             );
         }
         else {
             return (
                 <p className="item-description-text">
-                    {item.description}
+                    {item.description.length > 90 ? item.description.substring(0, 90) + "..." : item.description}
                 </p>
             );
         }
